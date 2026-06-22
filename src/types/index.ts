@@ -26,6 +26,26 @@ export interface OpeningHours {
 
 export interface GalleryItem {
   id: string
-  emoji: string
+  imageUrl: string
   alt: string
+  emoji: string
+}
+
+export interface ContactInfo {
+  address: string
+  telephone: string
+  email: string
+}
+
+export interface RestaurantConfig {
+  name: string
+  tagline: string
+  about: string[]
+  badge?: string
+  contact: ContactInfo
+  openingHours: OpeningHours[]
+  heroSlides: HeroSlide[]
+  gallery: GalleryItem[]
+  menuTagline: string
+  menuCategories: MenuCategory[]
 }

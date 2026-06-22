@@ -4,26 +4,23 @@ import MenuCard from './MenuCard'
 
 interface MenuSectionProps {
   categories: MenuCategory[]
+  tagline: string
 }
 
-const MenuSection: React.FC<MenuSectionProps> = ({ categories }) => {
+const MenuSection: React.FC<MenuSectionProps> = ({ categories, tagline }) => {
   const [activeId, setActiveId] = useState(categories[0]?.id ?? '')
-
   const activeCategory = categories.find((c) => c.id === activeId)
 
   return (
     <section id="menus" className="py-20 px-12 bg-gray-50">
-      {/* Header */}
       <div className="text-center mb-11">
         <h2 className="text-4xl font-light tracking-[-0.5px] mb-3">Tradition, Refined</h2>
         <p className="text-gray-500 text-sm leading-relaxed max-w-lg mx-auto">
-          Our menu celebrates the depth of Korean culinary heritage, shaped with contemporary
-          elegance. Every dish is lovingly prepared in-house by our Korean chefs, using authentic
-          home-made recipes.
+          Our menu celebrates the depth of culinary heritage, shaped with contemporary elegance.
+          Every dish is lovingly prepared in-house using authentic home-made recipes.
         </p>
       </div>
 
-      {/* Tabs */}
       <div className="flex flex-wrap gap-2 justify-center mb-9">
         {categories.map((cat) => (
           <button
@@ -40,20 +37,22 @@ const MenuSection: React.FC<MenuSectionProps> = ({ categories }) => {
         ))}
       </div>
 
-      {/* Items grid */}
       {activeCategory && (
-        <div className="grid gap-4" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(290px, 1fr))' }}>
+        <div
+          className="grid gap-4"
+          style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(290px, 1fr))' }}
+        >
           {activeCategory.items.map((item) => (
             <MenuCard key={item.id} item={item} />
           ))}
         </div>
       )}
 
-      {/* Tagline */}
-      <p className="text-center text-base italic text-gray-500 mt-14 max-w-xl mx-auto leading-relaxed">
-        Every dish is crafted with care, sourcing the finest ingredients to bring the comfort of
-        Korean home cooking into a refined London setting.
-      </p>
+      {tagline && (
+        <p className="text-center text-base italic text-gray-500 mt-14 max-w-xl mx-auto leading-relaxed">
+          {tagline}
+        </p>
+      )}
     </section>
   )
 }

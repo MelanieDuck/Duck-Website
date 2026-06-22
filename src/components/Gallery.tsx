@@ -18,10 +18,27 @@ const Gallery: React.FC<GalleryProps> = ({ items }) => {
         {items.map((item) => (
           <div
             key={item.id}
-            className="aspect-square rounded-sm overflow-hidden bg-[#181818] flex items-center justify-center text-[42px] cursor-pointer transition-all duration-250 brightness-75 hover:brightness-100 hover:scale-[1.02]"
+            className="aspect-square rounded-sm overflow-hidden bg-[#181818] flex items-center justify-center cursor-pointer transition-all duration-250 brightness-75 hover:brightness-100 hover:scale-[1.02]"
             aria-label={item.alt}
           >
-            {item.emoji}
+            {item.imageUrl ? (
+              <img
+                src={item.imageUrl}
+                alt={item.alt}
+                className="w-full h-full object-cover"
+                onError={(e) => {
+                  // Fallback to emoji if image fails to load
+                  const target = e.currentTarget
+                  target.style.display = 'none'
+                  const parent = target.parentElement
+                  if (parent) {
+                    parent.innerHTML = `<span class="text-[42px]">${item.emoji}</span>`
+                  }
+                }}
+              />
+            ) : (
+              <span className="text-[42px] text-[#2a2a2a]">{item.emoji}</span>
+            )}
           </div>
         ))}
       </div>
