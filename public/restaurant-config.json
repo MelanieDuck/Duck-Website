@@ -1,413 +1,1242 @@
 {
-  "name": "Ssam Ssam",
-  "tagline": "Authentic Korean Restaurant",
+  "name": "Sapori",
+  "tagline": "Authentic Italian Flavours in London's Heart",
   "about": [
-    "Nestled in the heart of a vibrant city, our family-run Korean restaurant located in Wimbledon stands as a culinary oasis, with a long-standing Korean culinary background in London since the early 2000s.",
-    "With a heritage spanning generations, we have mastered the art of Korean cuisine, infusing it with the warmth and authenticity only a family touch can provide. Our menu is a carefully curated journey through the diverse flavours of Korea, featuring a symphony of ingredients sourced from the finest purveyors."
+    "Welcome to Sapori, a relaxed and welcoming spot nestled on Horseferry Road in the heart of London. With a warm counter-service setting and a charming chalkboard menu, we bring a casual yet genuine dining experience to every visit.",
+    "At Sapori, we celebrate the best of Italian classics alongside beloved British fare, crafted with care and served with a smile. Our ever-changing chalkboard reflects our commitment to fresh, honest food that keeps our guests coming back."
   ],
-  "badge": "MICHELIN 2025",
+  "badge": null,
   "contact": {
-    "address": "99 St. Martin's Lane, London, WC2N 4AZ",
-    "telephone": "020 459 72123",
-    "email": "hello@ssamssam.com"
+    "address": "60 Horseferry Rd, London SW1P 2AF, UK",
+    "telephone": "020 7222 5488",
+    "email": ""
   },
   "openingHours": [
     {
-      "days": "Sunday – Wednesday",
-      "times": ["12:00 – 15:30 (Last order: 14:30)", "17:00 – 23:00 (Last order: 22:00)"]
+      "days": "Monday",
+      "times": [
+        "7:00 AM – 10:00 PM"
+      ]
     },
     {
-      "days": "Thursday – Friday",
-      "times": ["12:00 – 15:30 (Last order: 14:30)", "17:00 – 23:30 (Last order: 22:30)"]
+      "days": "Tuesday",
+      "times": [
+        "7:00 AM – 10:00 PM"
+      ]
+    },
+    {
+      "days": "Wednesday",
+      "times": [
+        "7:00 AM – 10:00 PM"
+      ]
+    },
+    {
+      "days": "Thursday",
+      "times": [
+        "7:00 AM – 10:00 PM"
+      ]
+    },
+    {
+      "days": "Friday",
+      "times": [
+        "7:00 AM – 10:00 PM"
+      ]
     },
     {
       "days": "Saturday",
-      "times": ["12:00 – 23:30 (Last order: 22:30)"]
+      "times": [
+        "7:00 AM – 10:00 PM"
+      ]
+    },
+    {
+      "days": "Sunday",
+      "times": [
+        "9:00 AM – 4:00 PM"
+      ]
     }
   ],
   "heroSlides": [
     {
       "id": "slide-1",
-      "imageUrl": "https://images.unsplash.com/photo-1590301157890-4810ed352733?w=1600&q=80",
-      "subtitle": "Authentic Korean Restaurant"
+      "imageUrl": "/images/sapori/003.jpg",
+      "subtitle": "Welcome"
     },
     {
       "id": "slide-2",
-      "imageUrl": "https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=1600&q=80",
-      "subtitle": "Michelin Recognised 2025"
+      "imageUrl": "/images/sapori/005.jpg",
+      "subtitle": "Taste the Difference"
     },
     {
       "id": "slide-3",
-      "imageUrl": "https://images.unsplash.com/photo-1617196034183-421b4040ed20?w=1600&q=80",
-      "subtitle": "Wimbledon, London"
+      "imageUrl": "/images/sapori/006.jpg",
+      "subtitle": "Book Your Table Today"
     }
   ],
   "gallery": [
-    { "id": "g1", "imageUrl": "", "alt": "Korean noodle dish", "emoji": "🍜" },
-    { "id": "g2", "imageUrl": "", "alt": "Korean bibimbap bowl", "emoji": "🥗" },
-    { "id": "g3", "imageUrl": "", "alt": "Korean BBQ meat", "emoji": "🥩" },
-    { "id": "g4", "imageUrl": "", "alt": "Korean dumplings", "emoji": "🥟" },
-    { "id": "g5", "imageUrl": "", "alt": "Korean fried rice", "emoji": "🍳" },
-    { "id": "g6", "imageUrl": "", "alt": "Korean BBQ grill", "emoji": "🔥" },
-    { "id": "g7", "imageUrl": "", "alt": "Korean vegetable dish", "emoji": "🌿" },
-    { "id": "g8", "imageUrl": "", "alt": "Korean stew", "emoji": "🍲" },
-    { "id": "g9", "imageUrl": "", "alt": "Restaurant exterior", "emoji": "🏮" }
+    {
+      "id": "g1",
+      "imageUrl": "/images/sapori/016.jpg",
+      "alt": "",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "g2",
+      "imageUrl": "/images/sapori/018.jpg",
+      "alt": "",
+      "emoji": "🍷"
+    },
+    {
+      "id": "g3",
+      "imageUrl": "/images/sapori/004.jpg",
+      "alt": "",
+      "emoji": "🥗"
+    },
+    {
+      "id": "g4",
+      "imageUrl": "/images/sapori/009.jpg",
+      "alt": "",
+      "emoji": "🍖"
+    },
+    {
+      "id": "g5",
+      "imageUrl": "/images/sapori/011.jpg",
+      "alt": "",
+      "emoji": "🥘"
+    },
+    {
+      "id": "g6",
+      "imageUrl": "/images/sapori/015.jpg",
+      "alt": "",
+      "emoji": "🍰"
+    },
+    {
+      "id": "g7",
+      "imageUrl": "/images/sapori/019.jpg",
+      "alt": "",
+      "emoji": "☕"
+    },
+    {
+      "id": "g8",
+      "imageUrl": "/images/sapori/001.jpg",
+      "alt": "",
+      "emoji": "🥂"
+    },
+    {
+      "id": "g9",
+      "imageUrl": "/images/sapori/002.jpg",
+      "alt": "",
+      "emoji": "🏮"
+    }
   ],
-  "menuTagline": "Every dish is crafted with care, sourcing the finest ingredients to bring the comfort of Korean home cooking into a refined London setting.",
+  "menuTagline": "From Italian classics to British favourites, our chalkboard tells today's delicious story.",
   "menuCategories": [
     {
-      "id": "starters",
-      "label": "Starter",
+      "id": "meat",
+      "label": "Meat",
       "items": [
         {
-          "id": "mandu",
-          "name": "Mandu (4 pcs)",
-          "description": "Pan-fried Korean dumplings filled with pork, tofu and vegetables",
-          "price": 8.50,
-          "emoji": "🥟"
+          "id": "roast-pork-dinner",
+          "name": "Roast Pork Dinner",
+          "description": "Slow cooked pork served with seasonal vegetables and roast potatoes with gravy sauce",
+          "price": 19.0,
+          "emoji": "🍖"
         },
         {
-          "id": "pajeon-v",
-          "name": "Pajeon",
-          "description": "Crispy Korean spring onion pancake served with dipping sauce",
-          "price": 11.00,
-          "emoji": "🥞",
-          "tags": ["V"]
+          "id": "grilled-chicken",
+          "name": "Grilled Chicken (Taxi Favourite)",
+          "description": "Served with roasted vegetables and rice topped with spicy tomato sauce",
+          "price": 19.0,
+          "emoji": "🍗"
         },
         {
-          "id": "haemul-pajeon",
-          "name": "Haemul Pajeon",
-          "description": "Seafood pancake with squid, prawn and spring onion in a crispy batter",
-          "price": 13.50,
-          "emoji": "🌊"
+          "id": "chicken-milanese",
+          "name": "Chicken Milanese*",
+          "description": "Chicken in bread crumbs served with spaghetti in tomato sauce * Contains Milk And Eggs",
+          "price": 19.0,
+          "emoji": "🍗"
         },
         {
-          "id": "tteokbokki",
-          "name": "Tteokbokki",
-          "description": "Spicy rice cakes in gochujang sauce with fish cake and boiled egg",
-          "price": 10.00,
-          "emoji": "🍢",
-          "tags": ["V", "Spicy"]
+          "id": "pollo-ai-funghi",
+          "name": "Pollo ai funghi*",
+          "description": "Chicken in creamy mushrooms sauce served with roast potatoes and vegetables * Contains milk",
+          "price": 19.0,
+          "emoji": "🍗"
         },
         {
-          "id": "wagyu-tartare",
-          "name": "Wagyu Tartare",
-          "description": "Premium wagyu beef tartare with Korean pear, sesame oil and egg yolk",
-          "price": 18.00,
-          "emoji": "🥩"
+          "id": "pollo-alla-provenzale",
+          "name": "Pollo alla Provenzale",
+          "description": "Chicken fillet with garlic, olives, thyme, anchovies in tomato sauce served with rice and vegetables",
+          "price": 19.0,
+          "emoji": "🍗"
+        }
+      ]
+    },
+    {
+      "id": "salads",
+      "label": "Salads",
+      "items": [
+        {
+          "id": "chicken-salad",
+          "name": "Chicken Salad",
+          "description": "Grilled chicken breast on a mixed leaves salad with tomatoes, cucumber, red onions, sweetcorns and parmesan with balsamic vinegar and olive oil dressing",
+          "price": 14.0,
+          "emoji": "🥗"
         },
         {
-          "id": "japchae",
-          "name": "Japchae",
-          "description": "Glass noodles stir-fried with vegetables, mushrooms and beef in a light sesame sauce",
-          "price": 9.50,
-          "emoji": "🍜"
+          "id": "tuna-salad",
+          "name": "Tuna Salad",
+          "description": "Lettuce, boiled eggs, green beans, red onion, black olives, roast peppers and tuna",
+          "price": 14.0,
+          "emoji": "🥗"
+        },
+        {
+          "id": "milanese-salad",
+          "name": "Milanese salad",
+          "description": "Mixed leaves, artichokes, chicken escalope, avocado, tomatoes mozzarella and olives *Side Salad or Chips £3.50",
+          "price": 14.0,
+          "emoji": "🥗"
+        },
+        {
+          "id": "royal-salad",
+          "name": "Royal salad",
+          "description": "Mix leaves, Cucumber, Avocado, Tomatoes, Red Onions, Capers and Smoke Salmon",
+          "price": 14.0,
+          "emoji": "🥗"
+        },
+        {
+          "id": "tricolore-salad",
+          "name": "Tricolore salad",
+          "description": "Rucola, Tomatoes, Mozzarella, Avocado, Green pesto dressing",
+          "price": 12.0,
+          "emoji": "🥗"
+        },
+        {
+          "id": "mediterranean-salad",
+          "name": "Mediterranean Salad",
+          "description": "Halumi, mixed leaves, avocado, tomato, olives and roast vegetables",
+          "price": 13.0,
+          "emoji": "🥗"
+        },
+        {
+          "id": "prosciutto-salad",
+          "name": "Prosciutto Salad",
+          "description": "Mixed leaves, artichokes, shaved parmesan cheese, avocado and parma ham",
+          "price": 14.0,
+          "emoji": "🥗"
+        },
+        {
+          "id": "fiorentina-salad",
+          "name": "Fiorentina Salad",
+          "description": "Baby spinach topped with crispy bacon, mozzarella cheese and avocado Add chicken + £1",
+          "price": 13.0,
+          "emoji": "🥗"
+        },
+        {
+          "id": "royal-salad-2",
+          "name": "Royal Salad",
+          "description": "Mixed leaves, boiled egg, artichokes, red onion, black olives and Smoked salmon",
+          "price": 14.0,
+          "emoji": "🥗"
+        }
+      ]
+    },
+    {
+      "id": "hot_drinks",
+      "label": "Hot Drinks",
+      "items": [
+        {
+          "id": "americano-cappuccino-caffe-e-latte",
+          "name": "Americano, Cappuccino, Caffe e Latte",
+          "description": "",
+          "price": 3.8,
+          "emoji": "☕"
+        },
+        {
+          "id": "mocha-hot-chocolate",
+          "name": "Mocha, hot chocolate",
+          "description": "",
+          "price": 4.0,
+          "emoji": "☕"
+        },
+        {
+          "id": "english-breakfast-tea-or-herbal-teas",
+          "name": "English Breakfast tea or herbal teas",
+          "description": "",
+          "price": 2.8,
+          "emoji": "🍵"
+        },
+        {
+          "id": "americano-cappuccino-caffe-e-latte-mocha-hot-chocolate",
+          "name": "Americano, Cappuccino, Caffe e Latte, Mocha, hot chocolate",
+          "description": "",
+          "price": 3.5,
+          "emoji": "☕"
+        },
+        {
+          "id": "americano",
+          "name": "Americano",
+          "description": "",
+          "price": 3.5,
+          "emoji": "☕"
+        },
+        {
+          "id": "cappuccino",
+          "name": "Cappuccino",
+          "description": "",
+          "price": 3.5,
+          "emoji": "☕"
+        },
+        {
+          "id": "caffe-e-latte",
+          "name": "Caffe e Latte",
+          "description": "",
+          "price": 3.5,
+          "emoji": "☕"
+        },
+        {
+          "id": "espresso",
+          "name": "Espresso",
+          "description": "",
+          "price": 2.2,
+          "emoji": "☕"
+        },
+        {
+          "id": "double-espresso",
+          "name": "Double Espresso",
+          "description": "",
+          "price": 3.0,
+          "emoji": "☕"
+        },
+        {
+          "id": "english-breakfast-tea",
+          "name": "English Breakfast tea",
+          "description": "",
+          "price": 2.5,
+          "emoji": "🍵"
+        },
+        {
+          "id": "herbal-or-fruit-tea",
+          "name": "Herbal or Fruit Tea",
+          "description": "",
+          "price": 2.5,
+          "emoji": "🍵"
+        },
+        {
+          "id": "mocha",
+          "name": "Mocha",
+          "description": "",
+          "price": 3.8,
+          "emoji": "☕"
+        },
+        {
+          "id": "hot-chocolate",
+          "name": "Hot chocolate",
+          "description": "",
+          "price": 3.8,
+          "emoji": "🍫"
+        },
+        {
+          "id": "espresso-single-or-double",
+          "name": "Espresso single or double",
+          "description": "",
+          "price": 1.8,
+          "emoji": "☕"
+        }
+      ]
+    },
+    {
+      "id": "soft_drinks",
+      "label": "Soft Drinks",
+      "items": [
+        {
+          "id": "coca-cola-diet-cola-fanta-sprite",
+          "name": "Coca cola, diet cola, fanta and sprite",
+          "description": "",
+          "price": 2.8,
+          "emoji": "🥤"
+        },
+        {
+          "id": "sanpellegrino-orange-lemon",
+          "name": "Sanpellegrino Orange/Lemon",
+          "description": "",
+          "price": 3.0,
+          "emoji": "🥤"
+        },
+        {
+          "id": "sparkling-still-water",
+          "name": "Sparkling/Still water",
+          "description": "",
+          "price": 2.5,
+          "emoji": "💧"
+        },
+        {
+          "id": "juice-orange-apple-cranberry",
+          "name": "Juice Orange/Apple/Cranberry",
+          "description": "",
+          "price": 3.8,
+          "emoji": "🧃"
+        },
+        {
+          "id": "fresh-orange-juice",
+          "name": "Fresh Orange Juice",
+          "description": "",
+          "price": 3.5,
+          "emoji": "🍊"
+        },
+        {
+          "id": "sanpellegrino",
+          "name": "Sanpellegrino",
+          "description": "Orange/Lemon",
+          "price": 2.2,
+          "emoji": "🥤"
+        },
+        {
+          "id": "juice",
+          "name": "Juice",
+          "description": "Orange/Apple/Cranberry",
+          "price": 3.0,
+          "emoji": "🧃"
+        }
+      ]
+    },
+    {
+      "id": "white_wine",
+      "label": "White Wine",
+      "items": [
+        {
+          "id": "pinot-grigio-delle-venezie-175cl",
+          "name": "Pinot Grigio delle Venezie",
+          "description": "175cl glass",
+          "price": 5.5,
+          "emoji": "🍷"
+        },
+        {
+          "id": "pinot-grigio-delle-venezie-250cl",
+          "name": "Pinot Grigio delle Venezie",
+          "description": "250cl glass",
+          "price": 7.0,
+          "emoji": "🍷"
+        },
+        {
+          "id": "pinot-grigio-delle-venezie-bottle",
+          "name": "Pinot Grigio delle Venezie",
+          "description": "Bottle",
+          "price": 28.0,
+          "emoji": "🍾"
+        },
+        {
+          "id": "cortese-piemonte-bottle",
+          "name": "Cortese Piemonte",
+          "description": "Bottle",
+          "price": 28.0,
+          "emoji": "🍾"
+        },
+        {
+          "id": "pinot-grigio-delle-venezie-175cl-2",
+          "name": "Pinot Grigio delle Venezie 175cl glass",
+          "description": "",
+          "price": 5.5,
+          "emoji": "🍷"
+        },
+        {
+          "id": "pinot-grigio-delle-venezie-250cl-2",
+          "name": "Pinot Grigio delle Venezie 250cl glass",
+          "description": "",
+          "price": 7.0,
+          "emoji": "🍷"
+        },
+        {
+          "id": "pinot-grigio-delle-venezie-bottle-2",
+          "name": "Pinot Grigio delle Venezie bottle",
+          "description": "",
+          "price": 28.0,
+          "emoji": "🍷"
+        },
+        {
+          "id": "cortese-piemonte-bottle-2",
+          "name": "Cortese Piemonte bottle",
+          "description": "",
+          "price": 28.0,
+          "emoji": "🍷"
+        },
+        {
+          "id": "pinot-grigio-delle-venezie",
+          "name": "Pinot Grigio delle Venezie",
+          "description": "",
+          "price": 5.5,
+          "emoji": "🍷"
+        },
+        {
+          "id": "cortese-piemonte",
+          "name": "Cortese Piemonte",
+          "description": "",
+          "price": 28.0,
+          "emoji": "🍷"
+        }
+      ]
+    },
+    {
+      "id": "red_wine",
+      "label": "Red Wine",
+      "items": [
+        {
+          "id": "sangiovese-rubicone-cantina-175cl",
+          "name": "Sangiovese Rubicone Cantina",
+          "description": "175cl glass",
+          "price": 5.5,
+          "emoji": "🍷"
+        },
+        {
+          "id": "sangiovese-rubicone-cantina-250cl",
+          "name": "Sangiovese Rubicone Cantina",
+          "description": "250cl glass",
+          "price": 7.0,
+          "emoji": "🍷"
+        },
+        {
+          "id": "sangiovese-rubicone-cantina-bottle",
+          "name": "Sangiovese Rubicone Cantina",
+          "description": "Bottle",
+          "price": 28.0,
+          "emoji": "🍾"
+        },
+        {
+          "id": "negramaro-bottle",
+          "name": "Negramaro",
+          "description": "Bottle",
+          "price": 28.0,
+          "emoji": "🍾"
+        },
+        {
+          "id": "sangiovese-rubicone-cantina-175cl-2",
+          "name": "Sangiovese Rubicone Cantina 175cl glass",
+          "description": "",
+          "price": 5.5,
+          "emoji": "🍷"
+        },
+        {
+          "id": "sangiovese-rubicone-cantina-250cl-2",
+          "name": "Sangiovese Rubicone Cantina 250cl glass",
+          "description": "",
+          "price": 7.0,
+          "emoji": "🍷"
+        },
+        {
+          "id": "sangiovese-rubicone-cantina-bottle-2",
+          "name": "Sangiovese Rubicone Cantina bottle",
+          "description": "",
+          "price": 28.0,
+          "emoji": "🍷"
+        },
+        {
+          "id": "barbera-piemonte-bottle",
+          "name": "Barbera Piemonte bottle",
+          "description": "",
+          "price": 28.0,
+          "emoji": "🍷"
+        },
+        {
+          "id": "sangiovese-rubicone-cantina",
+          "name": "Sangiovese Rubicone Cantina",
+          "description": "",
+          "price": 5.5,
+          "emoji": "🍷"
+        },
+        {
+          "id": "barbera-piemonte",
+          "name": "Barbera Piemonte",
+          "description": "",
+          "price": 28.0,
+          "emoji": "🍷"
+        },
+        {
+          "id": "barbera-piemonte-bottle-2",
+          "name": "Barbera Piemonte",
+          "description": "bottle",
+          "price": 25.0,
+          "emoji": "🍷"
+        }
+      ]
+    },
+    {
+      "id": "beer",
+      "label": "Beer",
+      "items": [
+        {
+          "id": "nastro-azzurro-peroni-or-moretti",
+          "name": "Nastro Azzurro (Peroni) or Moretti",
+          "description": "",
+          "price": 6.0,
+          "emoji": "🍺"
+        }
+      ]
+    },
+    {
+      "id": "cakes",
+      "label": "Cakes",
+      "items": [
+        {
+          "id": "cakes-ask-the-server",
+          "name": "Cakes - ask the server",
+          "description": "",
+          "price": 5.0,
+          "emoji": "🍰"
+        },
+        {
+          "id": "cakes",
+          "name": "Cakes",
+          "description": "Ask the server for our daily cake selection",
+          "price": 5.0,
+          "emoji": "🍰"
+        }
+      ]
+    },
+    {
+      "id": "pasta",
+      "label": "Pasta",
+      "items": [
+        {
+          "id": "penne-arrabbiata",
+          "name": "Penne Arrabbiata",
+          "description": "Penne Pasta in garlic and chilli spicy Tomato Sauce",
+          "price": 15.5,
+          "emoji": "🍝"
+        },
+        {
+          "id": "spaghetti-bolognese",
+          "name": "Spaghetti Bolognese",
+          "description": "Spaghetti with rich Beef Mince and Tomato Sauce * Contains Celery",
+          "price": 17.5,
+          "emoji": "🍝"
+        },
+        {
+          "id": "penne-tonno",
+          "name": "Penne Tonno",
+          "description": "Penne Pasta with Tuna, Rocket, Roast Peppers, Olives, Capers and Garlic in Tomato Sauce *Contains fish",
+          "price": 17.5,
+          "emoji": "🍝"
+        },
+        {
+          "id": "spaghetti-puttanesca",
+          "name": "Spaghetti Puttanesca",
+          "description": "Spaghetti with Garlic, Capers, Anchovies, Olives in Tomato Sauce * Contains Fish",
+          "price": 17.5,
+          "emoji": "🍝"
+        },
+        {
+          "id": "penne-amatriciana",
+          "name": "Penne Amatriciana",
+          "description": "Penne Pasta with Smoked Bacon, Onions and Garlic in a spicy Chilli Tomato Sauce",
+          "price": 17.5,
+          "emoji": "🍝"
+        },
+        {
+          "id": "tagliatelle-gamberetti-con-rucola",
+          "name": "Tagliatelle Gamberetti con rucola",
+          "description": "Ribbon pasta with prawns, garlic and chilli in a light tomato sauce topped with rocket * Contains crustaceous (prawns) and eggs",
+          "price": 17.5,
+          "emoji": "🍝"
+        },
+        {
+          "id": "penne-carbonara",
+          "name": "Penne Carbonara",
+          "description": "Penne pasta with bacon, creamy parmesan and egg yolk sauce * Contains Eggs And Milk",
+          "price": 17.5,
+          "emoji": "🍝"
+        },
+        {
+          "id": "tagliatelle-ai-funghi",
+          "name": "Tagliatelle ai funghi",
+          "description": "Ribbon pasta with baby spinach leaves, chicken and garlic in a creamy mushrooms sauce * Contains Eggs And Milk",
+          "price": 17.5,
+          "emoji": "🍝"
+        },
+        {
+          "id": "tagliatelle-al-pesto",
+          "name": "Tagliatelle al Pesto",
+          "description": "Ribbon pasta with basil pesto and broccoli *Contains eggs and milk",
+          "price": 17.5,
+          "emoji": "🍝"
+        },
+        {
+          "id": "fusilli-gorgonzola-e-mushrooms",
+          "name": "Fusilli Gorgonzola e Mushrooms",
+          "description": "Spiral pasta with gorgonzola cheese, mushrooms and spinach in a light creamy sauce * Contains Milk",
+          "price": 17.5,
+          "emoji": "🍝"
+        },
+        {
+          "id": "fusilli-chicken-and-broccoli",
+          "name": "Fusilli Chicken and broccoli",
+          "description": "Spiral Pasta tossed with Chicken, Broccoli and Onion Leaves and Garlic in a light Tomato Sauce topped with crispy Bacon",
+          "price": 17.5,
+          "emoji": "🍝"
+        },
+        {
+          "id": "fusilli-salsiccia",
+          "name": "Fusilli Salsiccia",
+          "description": "Spiral Pasta with Spinach, Onion, Garlic, Chilli and Sausages in Tomato Sauce",
+          "price": 17.5,
+          "emoji": "🍝"
+        },
+        {
+          "id": "tagliatelle-broccoli-pancetta",
+          "name": "Tagliatelle Broccoli Pancetta",
+          "description": "Ribbon pasta, broccoli, garlic, chillies, pancetta and creamy sauce *Contains Eggs And Milk",
+          "price": 15.5,
+          "emoji": "🍝"
+        },
+        {
+          "id": "tagliatelle-pesto-e-broccoli",
+          "name": "Tagliatelle Pesto e Broccoli",
+          "description": "Ribbon pasta with basil pesto and broccoli *Contains Eggs And Milk",
+          "price": 15.5,
+          "emoji": "🍝"
+        },
+        {
+          "id": "pasta-arrassiata",
+          "name": "Pasta Arrassiata",
+          "description": "Penne pasta in garlic & chilli spiced tomato sauce",
+          "price": 8.5,
+          "emoji": "🍝"
+        },
+        {
+          "id": "tagliatelle-broccoli-pancetta-chilli",
+          "name": "Tagliatelle, Broccoli, Pancetta & Chilli",
+          "description": "Ribbon pasta tossed with chillies, garlic, spring onion, broccoli & pancetta in a creamy cheese sauce",
+          "price": 10.0,
+          "emoji": "🍝"
+        },
+        {
+          "id": "fusilli-mare-e-monti",
+          "name": "Fusilli Mare E Monti",
+          "description": "Mushrooms, garlic, prawns & spinach in pink aurora sauce",
+          "price": 10.0,
+          "emoji": "🍝"
+        },
+        {
+          "id": "pasta-arrabbiata",
+          "name": "Pasta Arrabbiata",
+          "description": "Penne pasta in garlic & chilli spico tomato sauce",
+          "price": 9.0,
+          "emoji": "🍝"
+        },
+        {
+          "id": "penne-carbonara-2",
+          "name": "Penne Carbonara",
+          "description": "Bacon in creamy parmesan and egg yolk sauce",
+          "price": 9.0,
+          "emoji": "🍝"
+        },
+        {
+          "id": "spaghetti-bolognese-2",
+          "name": "Spaghetti Bolognese",
+          "description": "Spaghetti Pasta with traditional homemade Bolognese sauce",
+          "price": 9.0,
+          "emoji": "🍝"
+        },
+        {
+          "id": "tagliatelle-chicken-broccoli-and-bacon",
+          "name": "Tagliatelle chicken, broccoli and bacon",
+          "description": "Ribbon pasta with chicken, bacon, broccoli with chillies creamy sauce",
+          "price": 9.0,
+          "emoji": "🍝"
+        },
+        {
+          "id": "fiorentina-salad",
+          "name": "Fiorentina Salad",
+          "description": "Spinach, avocado, crispy bacon, mozzarella, chicken",
+          "price": 7.5,
+          "emoji": "🥗"
+        },
+        {
+          "id": "mix-plate-from-display",
+          "name": "Mix plate from display",
+          "description": "",
+          "price": 10.0,
+          "emoji": "🍽️"
+        },
+        {
+          "id": "tagliatelle-meatballs",
+          "name": "Tagliatelle Meatballs",
+          "description": "Ribbon Pasta in spicy Tomato Sauce with Roast Peppers and Meatballs",
+          "price": 9.5,
+          "emoji": "🍝"
+        },
+        {
+          "id": "tagliatelle-al-pollo",
+          "name": "Tagliatelle al Pollo",
+          "description": "Ribbon Pasta served with Chicken, Peppers and Onion in a light Tomato Sauce (spicy)",
+          "price": 9.5,
+          "emoji": "🍝"
+        },
+        {
+          "id": "tagliatelle-al-funghi",
+          "name": "Tagliatelle al Funghi",
+          "description": "Ribbon Pasta with Chicken, Baby Spinach Leaves and Garlic in a creamy Mushroom Sauce",
+          "price": 9.5,
+          "emoji": "🍝"
+        },
+        {
+          "id": "fusilli-siciliana",
+          "name": "Fusilli Siciliana",
+          "description": "Aubergine, Cherry tomato, Mozzarella, Tomato sauce",
+          "price": 9.5,
+          "emoji": "🍝"
+        },
+        {
+          "id": "tagliatelle-broccoli-pancetta-with-chillies",
+          "name": "Tagliatelle broccoli & pancetta with chillies",
+          "description": "Ribbon Pasta tossed with chillies, Garlic, Spring Onion, Broccoli and Bacon in Cheese Cream",
+          "price": 9.5,
+          "emoji": "🍝"
         }
       ]
     },
     {
       "id": "sides",
-      "label": "Side",
+      "label": "Sides",
       "items": [
         {
-          "id": "kimchi",
-          "name": "Kimchi",
-          "description": "House-made fermented napa cabbage kimchi",
-          "price": 4.00,
-          "emoji": "🥬"
+          "id": "mix-salad",
+          "name": "Mix Salad",
+          "description": "",
+          "price": 5.0,
+          "emoji": "🥗"
         },
         {
-          "id": "spinach-namul",
-          "name": "Spinach Namul",
-          "description": "Blanched spinach seasoned with sesame oil, garlic and soy",
-          "price": 4.00,
-          "emoji": "🌿",
-          "tags": ["V"]
+          "id": "chips",
+          "name": "Chips",
+          "description": "",
+          "price": 4.5,
+          "emoji": "🍟"
         },
         {
-          "id": "beansprout-namul",
-          "name": "Bean Sprout Namul",
-          "description": "Crunchy bean sprouts with sesame oil and spring onion",
-          "price": 4.00,
-          "emoji": "🌱",
-          "tags": ["V"]
+          "id": "garlic-bread",
+          "name": "Garlic Bread",
+          "description": "",
+          "price": 4.0,
+          "emoji": "🥖"
         },
         {
-          "id": "gyeran-jjim",
-          "name": "Gyeran Jjim",
-          "description": "Steamed egg soufflé, silky and lightly seasoned",
-          "price": 5.00,
-          "emoji": "🥚",
-          "tags": ["V"]
+          "id": "garlic-bread-with-cheese",
+          "name": "With Cheese",
+          "description": "",
+          "price": 4.5,
+          "emoji": "🧀"
+        },
+        {
+          "id": "garlic-bread-with-cheese-2",
+          "name": "Garlic Bread with Cheese",
+          "description": "",
+          "price": 3.5,
+          "emoji": "🥖"
+        },
+        {
+          "id": "salad",
+          "name": "Salad",
+          "description": "",
+          "price": 3.0,
+          "emoji": "🥗"
+        },
+        {
+          "id": "sides-with-bread",
+          "name": "Sides with bread",
+          "description": "",
+          "price": 3.5,
+          "emoji": "🍞"
         }
       ]
     },
     {
-      "id": "special",
-      "label": "Chef's Special",
+      "id": "sandwiches",
+      "label": "Sandwiches",
       "items": [
         {
-          "id": "wagyu-bulgogi",
-          "name": "Wagyu Bulgogi",
-          "description": "Premium wagyu marinated in house bulgogi sauce, cooked tableside on a stone plate",
-          "price": 32.00,
-          "emoji": "⭐"
+          "id": "ciabatta-tricolore",
+          "name": "Ciabatta Tricolore",
+          "description": "Mozzarella, avocado, sundried tomatoes and salad",
+          "price": 9.5,
+          "emoji": "🥪"
         },
         {
-          "id": "galbi-jjim",
-          "name": "Galbi Jjim",
-          "description": "Slow-braised beef short ribs in a rich Korean sauce with daikon and chestnuts",
-          "price": 28.00,
-          "emoji": "🍖"
+          "id": "ciabatta-primavera",
+          "name": "Ciabatta Primavera",
+          "description": "Grilled mediterranean vegetable, mozzarella and salad",
+          "price": 9.5,
+          "emoji": "🥪"
         },
         {
-          "id": "ganjang-gejang",
-          "name": "Ganjang Gejang",
-          "description": "Raw crab marinated in soy sauce — the 'rice thief' of Korean cuisine",
-          "price": 24.00,
-          "emoji": "🦀"
-        }
-      ]
-    },
-    {
-      "id": "rice",
-      "label": "Rice",
-      "items": [
-        {
-          "id": "dolsot-bibimbap",
-          "name": "Dolsot Bibimbap",
-          "description": "Stone pot rice with assorted vegetables, gochujang sauce and a fried egg",
-          "price": 16.50,
-          "emoji": "🍚",
-          "tags": ["V"]
+          "id": "focaccia-parma",
+          "name": "Focaccia Parma",
+          "description": "Parma ham, mozzarella and sundried tomatoes, salad",
+          "price": 10.0,
+          "emoji": "🥪"
         },
         {
-          "id": "wagyu-bibimbap",
-          "name": "Wagyu Bibimbap",
-          "description": "Stone pot rice with wagyu beef, seasonal vegetables and house gochujang",
-          "price": 24.00,
+          "id": "ciabatta-milano",
+          "name": "Ciabatta Milano",
+          "description": "Lettuce, tomato, salami, mozzarella",
+          "price": 10.0,
+          "emoji": "🥪"
+        },
+        {
+          "id": "ciabatta-pollo",
+          "name": "Ciabatta pollo",
+          "description": "Chicken escalope, pesto and salad",
+          "price": 10.0,
+          "emoji": "🥪"
+        },
+        {
+          "id": "tuna",
+          "name": "Tuna",
+          "description": "Ciabatta with tuna, salad, cheese",
+          "price": 10.0,
+          "emoji": "🥪"
+        },
+        {
+          "id": "panino-french",
+          "name": "Panino French",
+          "description": "Brie, bacon and salad",
+          "price": 10.0,
+          "emoji": "🥪"
+        },
+        {
+          "id": "baguette-rustica",
+          "name": "Baguette Rustica",
+          "description": "Grilled chicken, cheese and salad",
+          "price": 10.0,
+          "emoji": "🥖"
+        },
+        {
+          "id": "panino-diavola",
+          "name": "Panino Diavola",
+          "description": "Chicken escalope, roast peppers, salad and arrabiata sauce",
+          "price": 10.0,
+          "emoji": "🥪"
+        },
+        {
+          "id": "panino-porchetta",
+          "name": "Panino porchetta",
+          "description": "slow cooked pork, rucola, shaved parmesan, light mustard and mayo sauce",
+          "price": 10.0,
+          "emoji": "🥪"
+        },
+        {
+          "id": "chorizo",
+          "name": "Chorizo",
+          "description": "Baguette with mozzarella, chorizo, rucola, tomatoes",
+          "price": 10.0,
+          "emoji": "🥖"
+        },
+        {
+          "id": "ciabatta-artigiana",
+          "name": "Ciabatta artigiana",
+          "description": "Mix leaves, roasted veg, brie cheese, artichokes",
+          "price": 9.5,
+          "emoji": "🥪"
+        },
+        {
+          "id": "parigino",
+          "name": "Parigino",
+          "description": "Baguette with brie, avocado, sundried tomatoes and spinach",
+          "price": 9.5,
+          "emoji": "🥖"
+        },
+        {
+          "id": "carvery-sandwich",
+          "name": "Carvery Sandwich",
+          "description": "With choice of bread, filling, sauce and condiments",
+          "price": 10.0,
+          "emoji": "🥪"
+        },
+        {
+          "id": "tuna-2",
+          "name": "Tuna",
+          "description": "Tuna, Sliced and Tomato",
+          "price": 7.5,
+          "emoji": "🥖"
+        },
+        {
+          "id": "panino-porchetta-2",
+          "name": "Panino Porchetta",
+          "description": "",
+          "price": 7.5,
+          "emoji": "🥖"
+        },
+        {
+          "id": "caprese",
+          "name": "Caprese",
+          "description": "Mozzarella, tomato, pesto, rucola",
+          "price": 7.5,
+          "emoji": "🥖"
+        },
+        {
+          "id": "parmeino",
+          "name": "Parmeino",
+          "description": "",
+          "price": 7.0,
+          "emoji": "🥖"
+        },
+        {
+          "id": "sandwich-specials-of-the-day",
+          "name": "Sandwich specials of the day",
+          "description": "",
+          "price": 10.5,
+          "emoji": "🥪"
+        },
+        {
+          "id": "carvery-sandwich-2",
+          "name": "Carvery Sandwiches",
+          "description": "With choice of bread, filling, sauce and condiments",
+          "price": 10.0,
           "emoji": "🥩"
         },
         {
-          "id": "kimchi-bokkeumbap",
-          "name": "Kimchi Bokkeumbap",
-          "description": "Kimchi fried rice with pork, spring onion and a fried egg on top",
-          "price": 14.00,
+          "id": "ciabatta-diavola",
+          "name": "Ciabatta Diavola",
+          "description": "Chicken Escalope, Rose Peppers, Arrabbiata Sauce",
+          "price": 7.5,
+          "emoji": "🥖"
+        },
+        {
+          "id": "panino-porchetta-3",
+          "name": "Panino Porchetta",
+          "description": "Slow cooked pork, rocket, shaved parmesan, balsamic and mayo sauce",
+          "price": 7.5,
+          "emoji": "🥖"
+        },
+        {
+          "id": "ciabatta-artigiano",
+          "name": "Ciabatta Artigiano",
+          "description": "mixed leaves, brie, avocado, seasonal vegetables & artichokes",
+          "price": 7.0,
+          "emoji": "🥖"
+        },
+        {
+          "id": "parigino-2",
+          "name": "Parigino",
+          "description": "Baguette of Brie, Avocado, Sundried Tomato",
+          "price": 7.0,
+          "emoji": "🥖"
+        }
+      ]
+    },
+    {
+      "id": "breakfast",
+      "label": "Breakfast",
+      "items": [
+        {
+          "id": "breakfast-sandwich",
+          "name": "Breakfast Sandwich",
+          "description": "White or brown sandwich with choice of 2 fillings: Bacon, Sausage, Mushrooms, Scrambled Egg, Fried Egg, Grilled Tomatoes, Ham, Cheese.",
+          "price": 5.5,
+          "emoji": "🥪"
+        },
+        {
+          "id": "breakfast-crusty-roll",
+          "name": "Breakfast Crusty Roll",
+          "description": "Crusty Roll with choice of 2 fillings: Bacon, Sausage, Mushrooms, Scrambled Egg, Fried Egg, Grilled Tomatoes, Ham, Cheese.",
+          "price": 5.0,
+          "emoji": "🥐"
+        },
+        {
+          "id": "hot-breakfast-bap",
+          "name": "Hot Breakfast Bap",
+          "description": "White or brown bap with choice of 2 fillings: Bacon, Sausage, Mushrooms, Scrambled Egg, Fried Egg, Grilled Tomatoes, Ham, Cheese.",
+          "price": 6.0,
           "emoji": "🍳"
-        }
-      ]
-    },
-    {
-      "id": "noodles",
-      "label": "Noodles",
-      "items": [
-        {
-          "id": "mul-naengmyeon",
-          "name": "Mul Naengmyeon",
-          "description": "Cold buckwheat noodles in refreshing semi-frozen house-made beef broth, topped with brisket, Korean pear, cucumber and a boiled egg",
-          "price": 15.50,
-          "emoji": "🍜"
         },
         {
-          "id": "bibim-naengmyeon",
-          "name": "Bibim Naengmyeon",
-          "description": "Spicy cold buckwheat noodles mixed with spicy-sweet sauce, topped with beef brisket, Korean pear, cucumber and a boiled egg",
-          "price": 15.50,
-          "emoji": "🌶️",
-          "tags": ["Spicy"]
+          "id": "on-toast",
+          "name": "On Toast",
+          "description": "2 toasts with choice of 2 toppings: eggs, beans, mushrooms, ham, sausage, bacon, fresh tomato, avocado, cheese, scrambled eggs.",
+          "price": 6.0,
+          "emoji": "🍞"
         },
         {
-          "id": "wagyu-bibim-naengmyeon",
-          "name": "Wagyu Bibim Naengmyeon",
-          "description": "Spicy cold buckwheat noodles with Wagyu beef tartare, Korean pear, cucumber and a boiled egg",
-          "price": 21.00,
-          "emoji": "⭐",
-          "tags": ["Halal", "Spicy"]
+          "id": "toast-artigiano",
+          "name": "Toast Artigiano",
+          "description": "Avocado, grilled halloumi and fresh tomatoes on a artisan toast.",
+          "price": 8.5,
+          "emoji": "🥑"
         },
         {
-          "id": "deulkkae-makguksu",
-          "name": "Deulkkae Makguksu",
-          "description": "Perilla oil buckwheat noodles tossed in aromatic roasted perilla oil with seaweed and rich egg yolk",
-          "price": 15.50,
-          "emoji": "🌿",
-          "tags": ["V"]
+          "id": "sausage-chips",
+          "name": "Sausage - Chips",
+          "description": "",
+          "price": 1.5,
+          "emoji": "🌭"
         },
         {
-          "id": "chuncheon-makguksu",
-          "name": "Chuncheon Makguksu",
-          "description": "Chuncheon-style buckwheat noodles coated in a light, spicy-sweet sauce with crisp red cabbage and fresh vegetables",
-          "price": 15.50,
-          "emoji": "🥬",
-          "tags": ["V"]
+          "id": "portion-of-side-chips",
+          "name": "Portion of side chips",
+          "description": "",
+          "price": 3.0,
+          "emoji": "🍟"
         },
         {
-          "id": "on-myeon",
-          "name": "On Myeon",
-          "description": "Soft white noodles in savoury beef broth topped with slices of beef brisket and vegetables",
-          "price": 14.50,
-          "emoji": "🍲"
-        }
-      ]
-    },
-    {
-      "id": "soups",
-      "label": "Soups",
-      "items": [
-        {
-          "id": "doenjang-jjigae",
-          "name": "Doenjang Jjigae",
-          "description": "Traditional Korean fermented soybean paste stew with tofu, courgette and mushrooms",
-          "price": 13.50,
-          "emoji": "🍲",
-          "tags": ["V"]
+          "id": "side-salad",
+          "name": "Side Salad",
+          "description": "",
+          "price": 2.5,
+          "emoji": "🥗"
         },
         {
-          "id": "kimchi-jjigae",
-          "name": "Kimchi Jjigae",
-          "description": "Robust kimchi stew with pork belly, tofu and spring onion",
-          "price": 14.50,
-          "emoji": "🌶️",
-          "tags": ["Spicy"]
+          "id": "custard-tarts",
+          "name": "Custard tarts",
+          "description": "",
+          "price": 3.0,
+          "emoji": "🥧"
         },
         {
-          "id": "sundubu-jjigae",
-          "name": "Sundubu Jjigae",
-          "description": "Silken tofu stew with seafood in a spicy broth, served with an egg",
-          "price": 14.50,
-          "emoji": "🥢",
-          "tags": ["Spicy"]
+          "id": "donughts",
+          "name": "Donughts",
+          "description": "",
+          "price": 3.0,
+          "emoji": "🍩"
         },
         {
-          "id": "gomtang",
-          "name": "Gomtang",
-          "description": "Slow-simmered ox bone broth, milky white, with rice, spring onion and seasoning",
-          "price": 15.00,
-          "emoji": "🦴"
-        }
-      ]
-    },
-    {
-      "id": "bbq",
-      "label": "BBQ",
-      "items": [
-        {
-          "id": "samgyeopsal",
-          "name": "Samgyeopsal",
-          "description": "Grilled pork belly served with fresh lettuce, garlic, and house sauces",
-          "price": 22.00,
-          "emoji": "🔥"
+          "id": "traditional",
+          "name": "Traditional",
+          "description": "2 eggs, 1 sausage, 2 bacon, beans, toast, tea or coffee",
+          "price": 12.5,
+          "emoji": "🍳"
         },
         {
-          "id": "chadolbaegi",
-          "name": "Chadolbaegi",
-          "description": "Thinly sliced beef brisket grilled at the table, served with dipping sauce",
-          "price": 26.00,
-          "emoji": "🥩"
+          "id": "full-english",
+          "name": "Full English",
+          "description": "2 eggs, 1 sausage, 2 bacon, mushrooms, beans, toast, tea or coffee",
+          "price": 13.5,
+          "emoji": "🍳"
         },
         {
-          "id": "dak-galbi",
-          "name": "Dak Galbi",
-          "description": "Spicy stir-fried chicken with rice cakes, cabbage, spring onion and gochujang sauce",
-          "price": 20.00,
-          "emoji": "🐔",
-          "tags": ["Spicy"]
-        }
-      ]
-    },
-    {
-      "id": "cocktails",
-      "label": "Cocktails",
-      "items": [
-        {
-          "id": "seoul-sour",
-          "name": "Seoul Sour",
-          "description": "Soju, yuzu juice, egg white and honey syrup",
-          "price": 12.00,
-          "emoji": "🍋"
+          "id": "big-breakfast",
+          "name": "Big Breakfast",
+          "description": "2 eggs, 1 sausage, 2 bacon, mushrooms, beans, chips, toast, tea or coffee",
+          "price": 14.5,
+          "emoji": "🍳"
         },
         {
-          "id": "blossom-spritz",
-          "name": "Blossom Spritz",
-          "description": "Korean plum wine, elderflower, prosecco and fresh mint",
-          "price": 11.00,
-          "emoji": "🌸"
+          "id": "vegetarian",
+          "name": "Vegetarian",
+          "description": "2 eggs, mushrooms, beans, grilled tomatoes, 2 hash brown, toast, tea or coffee",
+          "price": 11.5,
+          "emoji": "🥚"
         },
         {
-          "id": "boksonju-fizz",
-          "name": "Boksonju Fizz",
-          "description": "Peach soju, lychee, sparkling water and a mint sprig",
-          "price": 12.00,
-          "emoji": "🍑"
-        }
-      ]
-    },
-    {
-      "id": "soju",
-      "label": "Soju",
-      "items": [
-        {
-          "id": "original-soju",
-          "name": "Original Soju",
-          "description": "Classic Korean soju, clean and smooth",
-          "price": 8.00,
-          "emoji": "🍶"
+          "id": "mr-huge",
+          "name": "Mr Huge",
+          "description": "2 eggs, 1 sausage, 2 bacon, mushrooms, beans, chips, hash brown, black pudding and grilled tomato, toast tea or coffee",
+          "price": 15.5,
+          "emoji": "🍳"
         },
         {
-          "id": "chum-churum",
-          "name": "Chum Churum",
-          "description": "Premium soft soju with a subtly sweet finish",
-          "price": 8.50,
-          "emoji": "🍶"
+          "id": "omelettes",
+          "name": "Omelettes",
+          "description": "3 eggs with choice of 2 toppings: Mushrooms, Ham, cheese, onion, bacon, sausage, peppers. Served with chips or salad. Tea or coffee included",
+          "price": 13.5,
+          "emoji": "🍳"
         },
         {
-          "id": "green-grape-soju",
-          "name": "Green Grape Soju",
-          "description": "Fruity soju infused with green grape, refreshing and light",
-          "price": 9.00,
-          "emoji": "🍇"
-        }
-      ]
-    },
-    {
-      "id": "wine",
-      "label": "Wine",
-      "items": [
-        {
-          "id": "makgeolli",
-          "name": "Makgeolli – Rice Wine",
-          "description": "Traditional Korean rice wine, lightly sparkling and pleasantly tangy",
-          "price": 7.00,
-          "emoji": "🍶"
+          "id": "wendys",
+          "name": "Wendy's",
+          "description": "ham, egg, chips, tea or coffee",
+          "price": 9.0,
+          "emoji": "🍳"
         },
         {
-          "id": "champagne",
-          "name": "Champagne",
-          "description": "Chilled glass of champagne for a celebratory toast",
-          "price": 14.00,
-          "emoji": "🥂"
+          "id": "veggie-florentine",
+          "name": "Veggie Florentine",
+          "description": "2 poached eggs, grilled tomato, mushrooms, spinach topped with Hollandaise sauce all served on artisan toast.",
+          "price": 11.5,
+          "emoji": "🥚"
         },
         {
-          "id": "red-wine-glass",
-          "name": "Red Wine – Glass",
-          "description": "Smooth and fruity house red wine by the glass",
-          "price": 8.00,
-          "emoji": "🍷"
+          "id": "eggs-royal",
+          "name": "Eggs Royal",
+          "description": "Scrambled eggs, smoked salmon, mixed leaves, tomato and avocado, on warm artisan bread",
+          "price": 12.5,
+          "emoji": "🥚"
         },
         {
-          "id": "red-wine-bottle",
-          "name": "Red Wine – Bottle",
-          "description": "Full bottle of house red wine",
-          "price": 30.00,
-          "emoji": "🍷"
+          "id": "eggs-florentine",
+          "name": "Eggs Florentine",
+          "description": "Poached eggs, spinach, ham, hollandaise sauce on artisan toast",
+          "price": 12.0,
+          "emoji": "🥚"
         },
         {
-          "id": "sparkling-wine",
-          "name": "Sparkling Wine",
-          "description": "Chilled glass of sparkling wine, crisp and elegant",
-          "price": 9.00,
-          "emoji": "🥂"
+          "id": "breakfast-wrap",
+          "name": "Breakfast Wrap",
+          "description": "Sausage, bacon, egg, hash browns with chips",
+          "price": 9.0,
+          "emoji": "🌯"
+        },
+        {
+          "id": "chicken-wrap",
+          "name": "Chicken wrap",
+          "description": "Chicken, cheese, Mayo, salad with chips or salad",
+          "price": 9.0,
+          "emoji": "🌯"
+        },
+        {
+          "id": "porridge",
+          "name": "Porridge",
+          "description": "Homemade porridge with servings (ask staff)",
+          "price": 6.0,
+          "emoji": "🥣"
+        },
+        {
+          "id": "english-muffin",
+          "name": "English Muffin",
+          "description": "2 eggs, bacon, avocado",
+          "price": 7.5,
+          "emoji": "🫓"
+        },
+        {
+          "id": "extras-egg-toast",
+          "name": "*Extras - Egg, toast, grilled tomatoes, mushrooms, cheese, beans, onions, peppers, bacon, hashbrown, black pudding",
+          "description": "Egg, toast, grilled tomatoes, mushrooms, cheese, beans, onions, peppers, bacon, hashbrown, black pudding",
+          "price": 1.0,
+          "emoji": "🍽️"
+        },
+        {
+          "id": "eggs-royale",
+          "name": "Eggs Royale",
+          "description": "Scrambled eggs, smoked salmon, mixed leaves, tomato and avocado, on warm artisan bread",
+          "price": 8.5,
+          "emoji": "🥚"
         }
       ]
     }
-  ]
+  ],
+  "reviews": [
+    {
+      "author": "Steve Leech",
+      "rating": 5.0,
+      "text": "Staying in a nearby hotel and was looking for something to eat on my own when I discovered this gem. Meatball pasta with Italian sausage, spinach, cherry tomatoes and red chillies made for an awesome dinner,",
+      "date": "2 months ago"
+    },
+    {
+      "author": "Alex B",
+      "rating": 5.0,
+      "text": "What a great hidden gem in the centre of London. We were not disappointed in our team brunch out. It's a family run cafe with lots of character and fantastic brunch options.\n\nThe team were happy with their choices - vegetarian, full English, vegetarian florentine, big breakfast and Mr Huge breakfast. Very, very good!\n\nAs we were leaving, the staff were putting out lunch time sandwiches which looked even better.\n\nIt was very reasonably priced given that it's a stone throw from Victoria. Definitel",
+      "date": "a year ago"
+    },
+    {
+      "author": "Édouard Fairfax",
+      "rating": 5.0,
+      "text": "One of the things I love most about this place is its warm and welcoming atmosphere.\n\nThe ability to choose your preferred type of pasta is a lovely touch, and the food is always comforting and satisfying.\n\nWhat I particularly like is that it feels like a place loved by local police officers and people who work in the area. That kind of loyal local following usually tells you everything you need to know.\n\nIt's the sort of place I find myself wanting to drop into on a relaxed weekend. A genuine l",
+      "date": "a month ago"
+    }
+  ],
+  "_meta": {
+    "place_id": "ChIJaeMWvsIEdkgRPKGlNOE_vd8",
+    "rating": 4.6,
+    "lat": "51.4949702",
+    "lng": "-0.1277006",
+    "real_menu_extracted": true,
+    "generated_by": "restaurant-pipeline"
+  }
 }
