@@ -5,6 +5,7 @@ import MenuSection from '@/components/MenuSection'
 import Gallery from '@/components/Gallery'
 import Footer from '@/components/Footer'
 import { useRestaurantConfig } from '@/hooks/useRestaurantConfig'
+import Reviews from '@/components/Reviews'
 
 const App: React.FC = () => {
   const { config, loading, error } = useRestaurantConfig()
@@ -35,8 +36,8 @@ const App: React.FC = () => {
 
       {/* Badge (e.g. Michelin 2025) — only shown if present in config */}
       {config.badge && (
-        <div className="text-center py-14 bg-white border-b border-gray-100">
-          <h2 className="text-[42px] font-light tracking-[-1px]">
+        <div className="text-center py-10 md:py-14 bg-white border-b border-gray-100">
+          <h2 className="text-[28px] md:text-[42px] font-light tracking-[-1px]">
             {config.badge.split(' ').map((word, i) => (
               i === 0
                 ? <strong key={i} className="font-bold text-crimson">{word} </strong>
@@ -47,7 +48,7 @@ const App: React.FC = () => {
       )}
 
       {/* About */}
-      <section id="about" className="py-20 px-10 text-center">
+      <section id="about" className="py-12 px-5 md:py-20 md:px-10 text-center">
         <p className="text-[11px] tracking-[3px] text-gray-400 uppercase mb-2.5">About Us</p>
         <div className="w-7 h-px bg-gray-200 mx-auto mb-9" />
         {config.about.map((paragraph, i) => (
@@ -59,7 +60,9 @@ const App: React.FC = () => {
           </p>
         ))}
       </section>
-
+      
+<Reviews reviews={config.reviews || []} />
+      
       <MenuSection
         categories={config.menuCategories}
         tagline={config.menuTagline}

@@ -37,6 +37,13 @@ export interface ContactInfo {
   email: string
 }
 
+export interface Review {
+  author: string
+  rating: number
+  text: string
+  date: string
+}
+
 export interface RestaurantConfig {
   name: string
   tagline: string
@@ -48,4 +55,5 @@ export interface RestaurantConfig {
   gallery: GalleryItem[]
   menuTagline: string
   menuCategories: MenuCategory[]
+  reviews?: Review[]
 }

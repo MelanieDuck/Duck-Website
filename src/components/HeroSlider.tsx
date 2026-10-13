@@ -11,7 +11,7 @@ const HeroSlider: React.FC<HeroSliderProps> = ({ slides }) => {
 
   return (
     <div
-      className="relative h-[480px] overflow-hidden bg-black"
+      className="relative h-[340px] md:h-[480px] overflow-hidden bg-black"
       onMouseEnter={stopTimer}
       onMouseLeave={startTimer}
     >
@@ -30,10 +30,10 @@ const HeroSlider: React.FC<HeroSliderProps> = ({ slides }) => {
 
       {/* Content */}
       <div className="relative z-10 h-full flex flex-col items-center justify-center text-center text-white">
-        <h1 className="text-[64px] font-bold tracking-[-2px] leading-[0.9] lowercase mb-3">
+        <h1 className="text-[42px] md:text-[64px] font-bold tracking-[-2px] leading-[0.9] lowercase mb-3">
           ssam<br />ssam
         </h1>
-        <p className="text-[11px] tracking-[4px] uppercase mb-7 opacity-85">
+        <p className="text-[10px] md:text-[11px] tracking-[3px] md:tracking-[4px] uppercase mb-7 opacity-85">
           {slides[current]?.subtitle}
         </p>
         <a
@@ -50,14 +50,14 @@ const HeroSlider: React.FC<HeroSliderProps> = ({ slides }) => {
         className="absolute left-5 top-1/2 -translate-y-1/2 z-20 text-white text-4xl opacity-60 hover:opacity-100 transition-opacity bg-transparent border-none cursor-pointer leading-none"
         aria-label="Previous slide"
       >
-        &#8249;
+        ‹
       </button>
       <button
         onClick={next}
         className="absolute right-5 top-1/2 -translate-y-1/2 z-20 text-white text-4xl opacity-60 hover:opacity-100 transition-opacity bg-transparent border-none cursor-pointer leading-none"
         aria-label="Next slide"
       >
-        &#8250;
+        ›
       </button>
 
       {/* Dots */}

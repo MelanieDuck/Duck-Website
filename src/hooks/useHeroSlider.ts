@@ -25,7 +25,7 @@ export function useHeroSlider(total: number, intervalMs = 4500) {
       setCurrent(index)
       startTimer()
     },
-    [startTimer]
+    [startTimer],
   )
 
   const prev = useCallback(() => {

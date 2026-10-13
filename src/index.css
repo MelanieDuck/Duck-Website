@@ -6,9 +6,11 @@
   * {
     box-sizing: border-box;
   }
+
   html {
     scroll-behavior: smooth;
   }
+
   body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     color: #111;
@@ -22,6 +24,7 @@
   .slide-enter {
     opacity: 0;
   }
+
   .slide-active {
     opacity: 1;
   }

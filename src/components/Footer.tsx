@@ -20,11 +20,8 @@ const Footer: React.FC<FooterProps> = ({ hours, address, telephone, email }) => 
   }
 
   return (
-    <footer id="contact" className="bg-[#080808] text-[#999] pt-20 pb-10 px-12">
-      <div
-        className="grid gap-12 max-w-[1040px] mx-auto"
-        style={{ gridTemplateColumns: 'repeat(3, 1fr)' }}
-      >
+    <footer id="contact" className="bg-[#080808] text-[#999] pt-12 pb-10 md:pt-20 px-5 md:px-12">
+      <div className="grid gap-8 md:gap-12 max-w-[1040px] mx-auto grid-cols-1 md:grid-cols-3">
         {/* Brand */}
         <div>
           <div className="text-[28px] text-white mb-5 tracking-wide">쌈쌈</div>
@@ -99,7 +96,7 @@ const Footer: React.FC<FooterProps> = ({ hours, address, telephone, email }) => 
         </div>
       </div>
 
-      <p className="text-center text-[11px] text-[#333] mt-14 pt-6 border-t border-[#111] tracking-wide">
+      <p className="text-center text-[11px] text-[#333] mt-10 md:mt-14 pt-6 border-t border-[#111] tracking-wide">
         © 2025 Ssam Ssam. All Rights Reserved.
       </p>
     </footer>

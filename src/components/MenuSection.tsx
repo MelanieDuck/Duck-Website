@@ -4,7 +4,7 @@ import MenuCard from './MenuCard'
 
 interface MenuSectionProps {
   categories: MenuCategory[]
-  tagline: string
+  tagline?: string
 }
 
 const MenuSection: React.FC<MenuSectionProps> = ({ categories, tagline }) => {
@@ -12,24 +12,17 @@ const MenuSection: React.FC<MenuSectionProps> = ({ categories, tagline }) => {
   const activeCategory = categories.find((c) => c.id === activeId)
 
   return (
-    <section id="menus" className="py-20 px-12 bg-gray-50">
-      <div className="text-center mb-11">
-        <h2 className="text-4xl font-light tracking-[-0.5px] mb-3">Tradition, Refined</h2>
-        <p className="text-gray-500 text-sm leading-relaxed max-w-lg mx-auto">
-          Our menu celebrates the depth of culinary heritage, shaped with contemporary elegance.
-          Every dish is lovingly prepared in-house using authentic home-made recipes.
-        </p>
-      </div>
-
-      <div className="flex flex-wrap gap-2 justify-center mb-9">
+    <section id="menus" className="py-8 md:py-10 px-5 md:px-10 bg-white">
+      {/* Pill tabs — left-aligned, wrap naturally */}
+      <div className="flex flex-wrap gap-2 mb-8">
         {categories.map((cat) => (
           <button
             key={cat.id}
             onClick={() => setActiveId(cat.id)}
-            className={`px-[18px] py-2 border text-[11px] tracking-[1.5px] uppercase rounded-sm cursor-pointer transition-all duration-200 ${
+            className={`px-4 py-1.5 rounded-full border text-[13.5px] font-normal cursor-pointer transition-colors duration-150 whitespace-nowrap ${
               activeId === cat.id
-                ? 'bg-crimson text-white border-crimson'
-                : 'bg-white text-gray-500 border-gray-200 hover:border-crimson hover:text-crimson'
+                ? 'bg-black text-white border-black'
+                : 'bg-white text-gray-800 border-gray-300 hover:border-gray-500'
             }`}
           >
             {cat.label}
@@ -37,11 +30,9 @@ const MenuSection: React.FC<MenuSectionProps> = ({ categories, tagline }) => {
         ))}
       </div>
 
+      {/* 2-column card grid */}
       {activeCategory && (
-        <div
-          className="grid gap-4"
-          style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(290px, 1fr))' }}
-        >
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
           {activeCategory.items.map((item) => (
             <MenuCard key={item.id} item={item} />
           ))}
@@ -49,7 +40,7 @@ const MenuSection: React.FC<MenuSectionProps> = ({ categories, tagline }) => {
       )}
 
       {tagline && (
-        <p className="text-center text-base italic text-gray-500 mt-14 max-w-xl mx-auto leading-relaxed">
+        <p className="text-center text-sm italic text-gray-400 mt-12 max-w-xl mx-auto leading-relaxed">
           {tagline}
         </p>
       )}
