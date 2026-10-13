@@ -1,22 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import type { GalleryItem } from '@/types'
+import Lightbox from './Lightbox'
 
 interface GalleryProps {
   items: GalleryItem[]
 }
 
 const Gallery: React.FC<GalleryProps> = ({ items }) => {
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null)
+
   return (
     <section id="gallery" className="bg-[#0d0d0d] py-12 md:py-20 px-5 md:px-12">
       <p className="text-center text-[11px] tracking-[3px] text-[#555] uppercase mb-2.5">Gallery</p>
       <div className="w-7 h-px bg-[#333] mx-auto mb-9" />
 
-      <div
-        className="grid gap-2.5 max-w-[920px] mx-auto mb-9 grid-cols-2 md:grid-cols-3"
-      >
-        {items.map((item) => (
+      <div className="grid gap-2.5 max-w-[920px] mx-auto mb-9 grid-cols-2 md:grid-cols-3">
+        {items.map((item, i) => (
           <div
             key={item.id}
+            onClick={() => setLightboxIndex(i)}
             className="aspect-square rounded-sm overflow-hidden bg-[#181818] flex items-center justify-center cursor-pointer transition-all duration-250 brightness-75 hover:brightness-100 hover:scale-[1.02]"
             aria-label={item.alt}
           >
@@ -26,7 +28,6 @@ const Gallery: React.FC<GalleryProps> = ({ items }) => {
                 alt={item.alt}
                 className="w-full h-full object-cover"
                 onError={(e) => {
-                  // Fallback to emoji if image fails to load
                   const target = e.currentTarget
                   target.style.display = 'none'
                   const parent = target.parentElement
@@ -50,6 +51,15 @@ const Gallery: React.FC<GalleryProps> = ({ items }) => {
           View Menu
         </a>
       </div>
+
+      {lightboxIndex !== null && (
+        <Lightbox
+          items={items}
+          index={lightboxIndex}
+          onClose={() => setLightboxIndex(null)}
+          onNavigate={setLightboxIndex}
+        />
+      )}
     </section>
   )
 }
