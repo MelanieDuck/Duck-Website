@@ -1,5 +1,6 @@
 import React from 'react'
 import type { Review } from '@/types'
+import SectionLabel from './SectionLabel'
 
 interface ReviewsProps {
   reviews: Review[]
@@ -7,7 +8,7 @@ interface ReviewsProps {
 
 const StarRating: React.FC<{ rating: number }> = ({ rating }) => {
   return (
-    <div className="flex gap-0.5 mb-3">
+    <div className="flex gap-0.5 mb-4">
       {Array.from({ length: 5 }).map((_, i) => (
         <svg
           key={i}
@@ -26,30 +27,27 @@ const Reviews: React.FC<ReviewsProps> = ({ reviews }) => {
   if (!reviews || reviews.length === 0) return null
 
   return (
-    <section id="reviews" className="py-16 md:py-20 px-5 md:px-10 bg-gray-50">
-      <div className="text-center mb-10">
-        <p className="text-[11px] tracking-[3px] text-gray-400 uppercase mb-2">
-          What Our Guests Say
-        </p>
-        <div className="w-7 h-px bg-gray-300 mx-auto" />
-      </div>
+    <section id="reviews" className="py-16 md:py-24 px-5 md:px-12 bg-gray-50 border-t border-gray-100">
+      <div className="max-w-[1080px] mx-auto">
+        <SectionLabel text="What Our Guests Say" />
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-5xl mx-auto">
-        {reviews.map((review, i) => (
-          <div
-            key={i}
-            className="bg-white border border-gray-100 rounded-lg p-6 shadow-sm flex flex-col"
-          >
-            <StarRating rating={review.rating} />
-            <p className="text-[14px] text-gray-700 leading-relaxed flex-1 mb-4">
-              "{review.text}"
-            </p>
-            <div className="pt-3 border-t border-gray-100">
-              <p className="text-[13px] font-medium text-gray-900">{review.author}</p>
-              <p className="text-[12px] text-gray-400">{review.date}</p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          {reviews.map((review, i) => (
+            <div
+              key={i}
+              className="bg-white border border-gray-100 rounded-xl p-6 md:p-7 shadow-sm flex flex-col"
+            >
+              <StarRating rating={review.rating} />
+              <p className="text-[14px] text-gray-600 leading-[1.7] flex-1 mb-5">
+                "{review.text}"
+              </p>
+              <div className="pt-4 border-t border-gray-100">
+                <p className="text-[13px] font-medium text-gray-900">{review.author}</p>
+                <p className="text-[12px] text-gray-400 mt-0.5">{review.date}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   )

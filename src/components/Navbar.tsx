@@ -15,7 +15,7 @@ const Navbar: React.FC<NavbarProps> = ({ restaurantName }) => {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <nav className="sticky top-0 z-50 flex items-center justify-between bg-white border-b border-gray-100 px-4 md:px-12 h-16">
+    <nav className="sticky top-0 z-50 flex items-center justify-between bg-white/95 backdrop-blur-sm border-b border-gray-100 px-5 md:px-12 h-16">
       <div className="flex items-center gap-3">
         <div className="w-9 h-9 border border-crimson flex items-center justify-center text-crimson text-sm font-bold">
           {restaurantName.charAt(0)}
@@ -72,7 +72,7 @@ const Navbar: React.FC<NavbarProps> = ({ restaurantName }) => {
                 <a
                   href={link.href}
                   onClick={() => setMenuOpen(false)}
-                  className="block px-4 py-3.5 text-[11px] tracking-[2.5px] text-gray-600 hover:text-crimson no-underline transition-colors duration-200 border-b border-gray-50"
+                  className="block px-5 py-3.5 text-[11px] tracking-[2.5px] text-gray-600 hover:text-crimson no-underline transition-colors duration-200 border-b border-gray-50"
                 >
                   {link.label}
                 </a>

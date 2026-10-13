@@ -4,14 +4,15 @@ import type { HeroSlide } from '@/types'
 
 interface HeroSliderProps {
   slides: HeroSlide[]
+  restaurantName: string
 }
 
-const HeroSlider: React.FC<HeroSliderProps> = ({ slides }) => {
+const HeroSlider: React.FC<HeroSliderProps> = ({ slides, restaurantName }) => {
   const { current, goTo, prev, next, stopTimer, startTimer } = useHeroSlider(slides.length)
 
   return (
     <div
-      className="relative h-[340px] md:h-[480px] overflow-hidden bg-black"
+      className="relative h-[420px] md:h-[560px] overflow-hidden bg-black"
       onMouseEnter={stopTimer}
       onMouseLeave={startTimer}
     >
@@ -21,7 +22,7 @@ const HeroSlider: React.FC<HeroSliderProps> = ({ slides }) => {
           className="absolute inset-0 transition-opacity duration-[1200ms] ease-in-out"
           style={{
             opacity: index === current ? 1 : 0,
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.38), rgba(0,0,0,0.55)), url(${slide.imageUrl})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.6)), url(${slide.imageUrl})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
@@ -29,16 +30,16 @@ const HeroSlider: React.FC<HeroSliderProps> = ({ slides }) => {
       ))}
 
       {/* Content */}
-      <div className="relative z-10 h-full flex flex-col items-center justify-center text-center text-white">
-        <h1 className="text-[42px] md:text-[64px] font-bold tracking-[-2px] leading-[0.9] lowercase mb-3">
-          ssam<br />ssam
+      <div className="relative z-10 h-full flex flex-col items-center justify-center text-center text-white px-5">
+        <h1 className="text-[48px] md:text-[72px] font-bold tracking-[-2px] leading-[0.9] lowercase mb-4">
+          {restaurantName.toLowerCase()}
         </h1>
-        <p className="text-[10px] md:text-[11px] tracking-[3px] md:tracking-[4px] uppercase mb-7 opacity-85">
+        <p className="text-[11px] md:text-[12px] tracking-[4px] uppercase mb-8 opacity-85">
           {slides[current]?.subtitle}
         </p>
         <a
           href="#reservation"
-          className="px-9 py-3.5 border-[1.5px] border-white text-white text-[11px] tracking-[2.5px] uppercase hover:bg-white hover:text-black transition-all duration-200 cursor-pointer"
+          className="px-10 py-3.5 border-[1.5px] border-white text-white text-[11px] tracking-[2.5px] uppercase hover:bg-white hover:text-black transition-all duration-200 cursor-pointer"
         >
           Book a Table
         </a>
@@ -47,21 +48,21 @@ const HeroSlider: React.FC<HeroSliderProps> = ({ slides }) => {
       {/* Arrows */}
       <button
         onClick={prev}
-        className="absolute left-5 top-1/2 -translate-y-1/2 z-20 text-white text-4xl opacity-60 hover:opacity-100 transition-opacity bg-transparent border-none cursor-pointer leading-none"
+        className="absolute left-5 top-1/2 -translate-y-1/2 z-20 text-white text-4xl opacity-50 hover:opacity-100 transition-opacity bg-transparent border-none cursor-pointer leading-none"
         aria-label="Previous slide"
       >
         ‹
       </button>
       <button
         onClick={next}
-        className="absolute right-5 top-1/2 -translate-y-1/2 z-20 text-white text-4xl opacity-60 hover:opacity-100 transition-opacity bg-transparent border-none cursor-pointer leading-none"
+        className="absolute right-5 top-1/2 -translate-y-1/2 z-20 text-white text-4xl opacity-50 hover:opacity-100 transition-opacity bg-transparent border-none cursor-pointer leading-none"
         aria-label="Next slide"
       >
         ›
       </button>
 
       {/* Dots */}
-      <div className="absolute bottom-5 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-2">
         {slides.map((slide, index) => (
           <button
             key={slide.id}
