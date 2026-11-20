@@ -15,7 +15,7 @@ const Navbar: React.FC<NavbarProps> = ({ restaurantName }) => {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <nav className="sticky top-0 z-50 flex items-center justify-between bg-white/95 backdrop-blur-sm border-b border-gray-100 px-5 md:px-12 h-16">
+    <nav aria-label="Main" className="sticky top-0 z-50 flex items-center justify-between bg-white/95 backdrop-blur-sm border-b border-gray-100 px-5 md:px-12 h-16">
       <div className="flex items-center gap-3">
         <div className="w-9 h-9 border border-crimson flex items-center justify-center text-crimson text-sm font-bold">
           {restaurantName.charAt(0)}

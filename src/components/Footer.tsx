@@ -26,14 +26,14 @@ const Footer: React.FC<FooterProps> = ({ restaurantName, hours, address, telepho
           {/* Brand */}
           <div>
             <div className="text-[24px] text-white mb-6 tracking-wide">{restaurantName}</div>
-            <p className="text-[13px] text-[#666] leading-[2]">
+            <address className="not-italic text-[13px] text-[#666] leading-[2]">
               {address.split(',').map((line, i) => (
                 <span key={i}>
                   {line.trim()}
                   {i < address.split(',').length - 1 && <br />}
                 </span>
               ))}
-            </p>
+            </address>
             <p className="text-[13px] text-[#666] leading-[2] mt-4">
               Telephone. {telephone}
               <br />
@@ -43,7 +43,7 @@ const Footer: React.FC<FooterProps> = ({ restaurantName, hours, address, telepho
 
           {/* Hours */}
           <div>
-            <h3 className="text-[11px] tracking-[3px] uppercase text-white mb-6">Opening Times</h3>
+            <h2 className="text-[11px] tracking-[3px] uppercase text-white mb-6">Opening Times</h2>
             {hours.map((block) => (
               <div key={block.days} className="mb-3">
                 <p className="text-[12px] font-semibold text-[#ccc] mb-1">{block.days}</p>
@@ -61,9 +61,9 @@ const Footer: React.FC<FooterProps> = ({ restaurantName, hours, address, telepho
 
           {/* Newsletter */}
           <div id="reservation">
-            <h3 className="text-[11px] tracking-[3px] uppercase text-white mb-6">
+            <h2 className="text-[11px] tracking-[3px] uppercase text-white mb-6">
               Join the Community
-            </h3>
+            </h2>
             <div className="mb-3">
               <label className="block text-[11px] text-[#555] tracking-wide uppercase mb-1.5">
                 Full Name <span className="text-crimson">*</span>

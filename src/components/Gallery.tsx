@@ -27,6 +27,8 @@ const Gallery: React.FC<GalleryProps> = ({ items }) => {
                 <img
                   src={item.imageUrl}
                   alt={item.alt}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     const target = e.currentTarget

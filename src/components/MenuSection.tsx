@@ -10,11 +10,11 @@ interface MenuSectionProps {
 
 const MenuSection: React.FC<MenuSectionProps> = ({ categories, tagline }) => {
   const [activeId, setActiveId] = useState(categories[0]?.id ?? '')
-  const activeCategory = categories.find((c) => c.id === activeId)
 
   return (
     <section id="menus" className="py-16 md:py-24 px-5 md:px-12 bg-white border-t border-gray-100">
       <div className="max-w-[1080px] mx-auto">
+        <h2 className="sr-only">Menu</h2>
         <SectionLabel text="Our Menu" />
 
         {/* Pill tabs — centered, wrap naturally */}
@@ -22,6 +22,7 @@ const MenuSection: React.FC<MenuSectionProps> = ({ categories, tagline }) => {
           {categories.map((cat) => (
             <button
               key={cat.id}
+              type="button"
               onClick={() => setActiveId(cat.id)}
               className={`px-5 py-2 rounded-full border text-[13px] font-medium cursor-pointer transition-colors duration-150 whitespace-nowrap ${
                 activeId === cat.id
@@ -34,14 +35,17 @@ const MenuSection: React.FC<MenuSectionProps> = ({ categories, tagline }) => {
           ))}
         </div>
 
-        {/* 2-column card grid */}
-        {activeCategory && (
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-            {activeCategory.items.map((item) => (
-              <MenuCard key={item.id} item={item} />
-            ))}
+        {/* All categories rendered; inactive hidden via wrapper */}
+        {categories.map((cat) => (
+          <div key={cat.id} className={cat.id === activeId ? '' : 'hidden'}>
+            <h3 className="sr-only">{cat.label}</h3>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+              {cat.items.map((item) => (
+                <MenuCard key={item.id} item={item} />
+              ))}
+            </div>
           </div>
-        )}
+        ))}
 
         {tagline && (
           <p className="text-center text-[13px] italic text-gray-400 mt-12 max-w-xl mx-auto leading-relaxed">
