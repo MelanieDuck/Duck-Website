@@ -200,6 +200,11 @@ try {
   // ── Build meta tags block ────────────────────────────────
   const tags = []
 
+  const preloadImage = config.heroSlides?.[0]?.imageUrl
+  if (typeof preloadImage === 'string' && preloadImage.trim()) {
+    tags.push(`<link rel="preload" as="image" href="${escapeHtml(preloadImage)}" fetchpriority="high" />`)
+  }
+
   if (siteUrl) {
     tags.push(`<link rel="canonical" href="${escapeHtml(siteUrl)}" />`)
   }
