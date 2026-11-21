@@ -19,6 +19,12 @@ const Footer: React.FC<FooterProps> = ({ restaurantName, hours, address, telepho
     setEmailInput('')
   }
 
+  const telHref = telephone ? 'tel:' + telephone.replace(/[^+\d]/g, '') : ''
+  const mailtoHref = email ? `mailto:${email}` : ''
+  const encodedAddress = encodeURIComponent(address)
+  const mapsSearchUrl = `https://www.google.com/maps/search/?api=1&query=${encodedAddress}`
+  const mapsDirUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodedAddress}`
+
   return (
     <footer id="contact" className="bg-[#0d0d0d] text-[#999] pt-16 md:pt-24 pb-10 px-5 md:px-12">
       <div className="max-w-[1080px] mx-auto">
@@ -27,17 +33,32 @@ const Footer: React.FC<FooterProps> = ({ restaurantName, hours, address, telepho
           <div>
             <div className="text-[24px] text-white mb-6 tracking-wide">{restaurantName}</div>
             <address className="not-italic text-[13px] text-[#666] leading-[2]">
-              {address.split(',').map((line, i) => (
-                <span key={i}>
-                  {line.trim()}
-                  {i < address.split(',').length - 1 && <br />}
-                </span>
-              ))}
+              <a
+                href={mapsSearchUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#666] hover:underline"
+              >
+                {address.split(',').map((line, i) => (
+                  <span key={i}>
+                    {line.trim()}
+                    {i < address.split(',').length - 1 && <br />}
+                  </span>
+                ))}
+              </a>
             </address>
             <p className="text-[13px] text-[#666] leading-[2] mt-4">
-              Telephone. {telephone}
+              {telephone ? (
+                <>Telephone. <a href={telHref} className="text-[#666] hover:underline">{telephone}</a></>
+              ) : (
+                <>Telephone. {telephone}</>
+              )}
               <br />
-              Email. {email}
+              {email ? (
+                <>Email. <a href={mailtoHref} className="text-[#666] hover:underline">{email}</a></>
+              ) : (
+                <>Email. {email}</>
+              )}
             </p>
           </div>
 
@@ -54,9 +75,14 @@ const Footer: React.FC<FooterProps> = ({ restaurantName, hours, address, telepho
                 ))}
               </div>
             ))}
-            <button className="mt-5 px-5 py-2.5 border border-[#333] bg-transparent text-[#888] text-[11px] tracking-[2px] uppercase cursor-pointer hover:border-[#666] hover:text-[#ccc] transition-all duration-200">
+            <a
+              href={mapsDirUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-5 px-5 py-2.5 border border-[#333] bg-transparent text-[#888] text-[11px] tracking-[2px] uppercase cursor-pointer hover:border-[#666] hover:text-[#ccc] transition-all duration-200"
+            >
               Get Directions
-            </button>
+            </a>
           </div>
 
           {/* Newsletter */}

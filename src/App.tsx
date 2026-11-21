@@ -73,7 +73,7 @@ const App: React.FC = () => {
           tagline={config.menuTagline}
         />
 
-        <Gallery items={config.gallery} />
+        <Gallery items={config.gallery} restaurantName={config.name} />
       </main>
 
       <Footer

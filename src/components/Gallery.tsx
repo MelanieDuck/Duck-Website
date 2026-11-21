@@ -5,9 +5,10 @@ import SectionLabel from './SectionLabel'
 
 interface GalleryProps {
   items: GalleryItem[]
+  restaurantName: string
 }
 
-const Gallery: React.FC<GalleryProps> = ({ items }) => {
+const Gallery: React.FC<GalleryProps> = ({ items, restaurantName }) => {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null)
 
   return (
@@ -26,7 +27,7 @@ const Gallery: React.FC<GalleryProps> = ({ items }) => {
               {item.imageUrl ? (
                 <img
                   src={item.imageUrl}
-                  alt={item.alt}
+                  alt={item.alt || `${restaurantName} – photo ${i + 1}`}
                   loading="lazy"
                   decoding="async"
                   className="w-full h-full object-cover"
