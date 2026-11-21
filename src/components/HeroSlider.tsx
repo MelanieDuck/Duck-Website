@@ -38,7 +38,7 @@ const HeroSlider: React.FC<HeroSliderProps> = ({ slides, restaurantName }) => {
           {slides[current]?.subtitle}
         </p>
         <a
-          href="#reservation"
+          href="#contact"
           className="px-10 py-3.5 border-[1.5px] border-white text-white text-[11px] tracking-[2.5px] uppercase hover:bg-white hover:text-black transition-all duration-200 cursor-pointer"
         >
           Book a Table
