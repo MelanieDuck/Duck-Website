@@ -5,7 +5,7 @@ interface NavbarProps {
 }
 
 const navLinks = [
-  { label: 'RESERVATION', href: '#reservation' },
+  { label: 'RESERVATION', href: '#contact' },
   { label: 'MENUS', href: '#menus' },
   { label: 'GALLERY', href: '#gallery' },
   { label: 'CONTACT US', href: '#contact' },

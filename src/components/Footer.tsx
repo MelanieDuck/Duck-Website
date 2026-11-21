@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import type { OpeningHours } from '@/types'
 
 interface FooterProps {
@@ -10,15 +10,6 @@ interface FooterProps {
 }
 
 const Footer: React.FC<FooterProps> = ({ restaurantName, hours, address, telephone, email }) => {
-  const [fullName, setFullName] = useState('')
-  const [emailInput, setEmailInput] = useState('')
-
-  const handleSubscribe = () => {
-    alert(`Thanks ${fullName}! We'll keep you updated at ${emailInput}.`)
-    setFullName('')
-    setEmailInput('')
-  }
-
   const telHref = telephone ? 'tel:' + telephone.replace(/[^+\d]/g, '') : ''
   const mailtoHref = email ? `mailto:${email}` : ''
   const encodedAddress = encodeURIComponent(address)
@@ -28,7 +19,7 @@ const Footer: React.FC<FooterProps> = ({ restaurantName, hours, address, telepho
   return (
     <footer id="contact" className="bg-[#0d0d0d] text-[#999] pt-16 md:pt-24 pb-10 px-5 md:px-12">
       <div className="max-w-[1080px] mx-auto">
-        <div className="grid gap-10 md:gap-16 grid-cols-1 md:grid-cols-3 mb-12">
+        <div className="grid gap-10 md:gap-16 grid-cols-1 md:grid-cols-2 mb-12 max-w-[720px] mx-auto">
           {/* Brand */}
           <div>
             <div className="text-[24px] text-white mb-6 tracking-wide">{restaurantName}</div>
@@ -83,43 +74,6 @@ const Footer: React.FC<FooterProps> = ({ restaurantName, hours, address, telepho
             >
               Get Directions
             </a>
-          </div>
-
-          {/* Newsletter */}
-          <div id="reservation">
-            <h2 className="text-[11px] tracking-[3px] uppercase text-white mb-6">
-              Join the Community
-            </h2>
-            <div className="mb-3">
-              <label className="block text-[11px] text-[#555] tracking-wide uppercase mb-1.5">
-                Full Name <span className="text-crimson">*</span>
-              </label>
-              <input
-                type="text"
-                value={fullName}
-                onChange={(e) => setFullName(e.target.value)}
-                placeholder="Your full name"
-                className="w-full px-3 py-2.5 bg-[#161616] border border-[#222] text-[#ccc] text-[13px] rounded-sm outline-none focus:border-[#444] placeholder-[#444] transition-colors"
-              />
-            </div>
-            <div className="mb-4">
-              <label className="block text-[11px] text-[#555] tracking-wide uppercase mb-1.5">
-                Email <span className="text-crimson">*</span>
-              </label>
-              <input
-                type="email"
-                value={emailInput}
-                onChange={(e) => setEmailInput(e.target.value)}
-                placeholder="your@email.com"
-                className="w-full px-3 py-2.5 bg-[#161616] border border-[#222] text-[#ccc] text-[13px] rounded-sm outline-none focus:border-[#444] placeholder-[#444] transition-colors"
-              />
-            </div>
-            <button
-              onClick={handleSubscribe}
-              className="w-full py-3 bg-white text-black text-[11px] tracking-[2.5px] uppercase border-none cursor-pointer hover:bg-gray-200 transition-colors duration-200"
-            >
-              Keep Me Updated
-            </button>
           </div>
         </div>
 
