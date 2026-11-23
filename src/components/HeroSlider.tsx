@@ -34,12 +34,12 @@ const HeroSlider: React.FC<HeroSliderProps> = ({ slides, restaurantName }) => {
         <h1 className="text-[48px] md:text-[72px] font-bold tracking-[-2px] leading-[0.9] lowercase mb-4">
           {restaurantName.toLowerCase()}
         </h1>
-        <p className="text-[11px] md:text-[12px] tracking-[4px] uppercase mb-8 opacity-85">
+        <p className="text-[13px] md:text-[14px] tracking-[4px] uppercase mb-8 opacity-85">
           {slides[current]?.subtitle}
         </p>
         <a
           href="#contact"
-          className="px-10 py-3.5 border-[1.5px] border-white text-white text-[11px] tracking-[2.5px] uppercase hover:bg-white hover:text-black transition-all duration-200 cursor-pointer"
+          className="px-10 py-3.5 border-[1.5px] border-white text-white text-[13px] md:text-[14px] tracking-[2.5px] uppercase hover:bg-white hover:text-black transition-all duration-200 cursor-pointer"
         >
           Book a Table
         </a>

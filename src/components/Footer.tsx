@@ -23,7 +23,7 @@ const Footer: React.FC<FooterProps> = ({ restaurantName, hours, address, telepho
           {/* Brand */}
           <div>
             <div className="text-[24px] text-white mb-6 tracking-wide">{restaurantName}</div>
-            <address className="not-italic text-[13px] text-[#666] leading-[2]">
+            <address className="not-italic text-[14px] md:text-[15px] text-[#666] leading-[1.7]">
               <a
                 href={mapsSearchUrl}
                 target="_blank"
@@ -38,7 +38,7 @@ const Footer: React.FC<FooterProps> = ({ restaurantName, hours, address, telepho
                 ))}
               </a>
             </address>
-            <p className="text-[13px] text-[#666] leading-[2] mt-4">
+            <p className="text-[14px] md:text-[15px] text-[#666] leading-[1.7] mt-4">
               {telephone ? (
                 <>Telephone. <a href={telHref} className="text-[#666] hover:underline">{telephone}</a></>
               ) : (
@@ -55,12 +55,12 @@ const Footer: React.FC<FooterProps> = ({ restaurantName, hours, address, telepho
 
           {/* Hours */}
           <div>
-            <h2 className="text-[11px] tracking-[3px] uppercase text-white mb-6">Opening Times</h2>
+            <h2 className="text-[13px] md:text-[14px] tracking-[3px] uppercase text-white mb-6">Opening Times</h2>
             {hours.map((block) => (
               <div key={block.days} className="mb-3">
-                <p className="text-[12px] font-semibold text-[#ccc] mb-1">{block.days}</p>
+                <p className="text-[14px] md:text-[15px] font-semibold text-[#ccc] mb-1">{block.days}</p>
                 {block.times.map((time) => (
-                  <p key={time} className="text-[12px] text-[#666] leading-[1.8]">
+                  <p key={time} className="text-[14px] md:text-[15px] text-[#666] leading-[1.7]">
                     {time}
                   </p>
                 ))}
@@ -70,14 +70,14 @@ const Footer: React.FC<FooterProps> = ({ restaurantName, hours, address, telepho
               href={mapsDirUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block mt-5 px-5 py-2.5 border border-[#333] bg-transparent text-[#888] text-[11px] tracking-[2px] uppercase cursor-pointer hover:border-[#666] hover:text-[#ccc] transition-all duration-200"
+              className="inline-block mt-5 px-5 py-2.5 border border-[#333] bg-transparent text-[#888] text-[13px] md:text-[14px] tracking-[2px] uppercase cursor-pointer hover:border-[#666] hover:text-[#ccc] transition-all duration-200"
             >
               Get Directions
             </a>
           </div>
         </div>
 
-        <p className="text-center text-[11px] text-[#444] pt-6 border-t border-[#1a1a1a] tracking-wide">
+        <p className="text-center text-[13px] md:text-[14px] text-[#444] pt-6 border-t border-[#1a1a1a] tracking-wide">
           © 2026 {restaurantName}. All Rights Reserved.
         </p>
       </div>

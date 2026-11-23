@@ -11,7 +11,7 @@ const SectionLabel: React.FC<SectionLabelProps> = ({ text, variant = 'light' }) 
 
   return (
     <div className="text-center mb-12">
-      <h2 className={`text-[11px] tracking-[3px] ${labelColor} uppercase mb-3`}>{text}</h2>
+      <h2 className={`text-[13px] md:text-[14px] tracking-[3px] ${labelColor} uppercase mb-3`}>{text}</h2>
       <div className={`w-8 h-px ${lineColor} mx-auto`} />
     </div>
   )

@@ -50,7 +50,7 @@ const Gallery: React.FC<GalleryProps> = ({ items, restaurantName }) => {
         <div className="text-center">
           <a
             href="#menus"
-            className="inline-block px-8 py-3.5 border border-[#444] text-[#aaa] text-[11px] tracking-[2.5px] uppercase hover:border-white hover:text-white transition-all duration-200 cursor-pointer"
+            className="inline-block px-8 py-3.5 border border-[#444] text-[#aaa] text-[13px] md:text-[14px] tracking-[2.5px] uppercase hover:border-white hover:text-white transition-all duration-200 cursor-pointer"
           >
             View Menu
           </a>

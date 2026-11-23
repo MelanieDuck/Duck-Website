@@ -31,7 +31,7 @@ const Navbar: React.FC<NavbarProps> = ({ restaurantName }) => {
           <li key={link.label}>
             <a
               href={link.href}
-              className="text-[11px] tracking-[2.5px] text-gray-500 hover:text-crimson no-underline transition-colors duration-200"
+              className="text-[12px] md:text-[14px] tracking-[2px] md:tracking-[2.5px] text-gray-500 hover:text-crimson no-underline transition-colors duration-200"
             >
               {link.label}
             </a>
@@ -72,7 +72,7 @@ const Navbar: React.FC<NavbarProps> = ({ restaurantName }) => {
                 <a
                   href={link.href}
                   onClick={() => setMenuOpen(false)}
-                  className="block px-5 py-3.5 text-[11px] tracking-[2.5px] text-gray-600 hover:text-crimson no-underline transition-colors duration-200 border-b border-gray-50"
+                  className="block px-5 py-3.5 text-[13px] tracking-[2px] text-gray-600 hover:text-crimson no-underline transition-colors duration-200 border-b border-gray-50"
                 >
                   {link.label}
                 </a>
