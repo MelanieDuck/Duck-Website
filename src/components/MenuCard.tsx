@@ -18,12 +18,12 @@ const MenuCard: React.FC<MenuCardProps> = ({ item }) => {
         {/* Row 1: name + price */}
         <div className="flex items-start justify-between gap-3 mb-2">
           <span
-            className="text-[15px] font-semibold leading-snug"
+            className="text-[16px] font-semibold leading-snug"
             style={{ color: '#2c1a0e' }}
           >
             {item.name}
           </span>
-          <span className="flex-shrink-0 text-[14px] font-semibold text-gray-700 bg-gray-100 rounded-md px-2.5 py-0.5 whitespace-nowrap leading-6">
+          <span className="flex-shrink-0 text-[16px] md:text-[18px] font-semibold text-gray-700 bg-gray-100 rounded-md px-2.5 py-0.5 whitespace-nowrap leading-6">
             £{item.price.toFixed(2)}
           </span>
         </div>
@@ -36,7 +36,7 @@ const MenuCard: React.FC<MenuCardProps> = ({ item }) => {
                 return (
                   <span
                     key={tag}
-                    className="inline-flex items-center justify-center text-[11px] font-bold text-green-700 bg-green-50 border border-green-300 rounded px-1.5 py-0.5 leading-none"
+                    className="inline-flex items-center justify-center text-[13px] md:text-[14px] font-bold text-green-700 bg-green-50 border border-green-300 rounded px-1.5 py-0.5 leading-none"
                   >
                     {tag}
                   </span>
@@ -56,7 +56,7 @@ const MenuCard: React.FC<MenuCardProps> = ({ item }) => {
 
         {/* Row 3: description */}
         {item.description && (
-          <p className="text-[13px] leading-[1.7] text-gray-500">
+          <p className="text-[14px] md:text-[15px] leading-[1.7] text-gray-500">
             {boldPart && (
               <strong className="font-semibold text-gray-800">{boldPart}</strong>
             )}

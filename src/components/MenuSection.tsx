@@ -24,7 +24,7 @@ const MenuSection: React.FC<MenuSectionProps> = ({ categories, tagline }) => {
               key={cat.id}
               type="button"
               onClick={() => setActiveId(cat.id)}
-              className={`px-5 py-2 rounded-full border text-[13px] font-medium cursor-pointer transition-colors duration-150 whitespace-nowrap ${
+              className={`px-5 py-2 rounded-full border text-[13px] md:text-[14px] font-medium cursor-pointer transition-colors duration-150 whitespace-nowrap ${
                 activeId === cat.id
                   ? 'bg-crimson text-white border-crimson'
                   : 'bg-white text-gray-700 border-gray-200 hover:border-gray-400'
@@ -48,7 +48,7 @@ const MenuSection: React.FC<MenuSectionProps> = ({ categories, tagline }) => {
         ))}
 
         {tagline && (
-          <p className="text-center text-[13px] italic text-gray-400 mt-12 max-w-xl mx-auto leading-relaxed">
+          <p className="text-center text-[14px] md:text-[15px] italic text-gray-400 mt-12 max-w-xl mx-auto leading-[1.7]">
             {tagline}
           </p>
         )}

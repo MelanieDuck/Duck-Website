@@ -58,7 +58,7 @@ const App: React.FC = () => {
             {config.about.map((paragraph, i) => (
               <p
                 key={i}
-                className="max-w-[620px] mx-auto text-[15px] leading-[1.85] text-gray-500 mb-5 last:mb-0"
+                className="max-w-[620px] mx-auto text-[16px] md:text-[18px] leading-[1.7] text-gray-500 mb-5 last:mb-0"
               >
                 {paragraph}
               </p>

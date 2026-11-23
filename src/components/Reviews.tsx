@@ -38,12 +38,12 @@ const Reviews: React.FC<ReviewsProps> = ({ reviews }) => {
               className="bg-white border border-gray-100 rounded-xl p-6 md:p-7 shadow-sm flex flex-col"
             >
               <StarRating rating={review.rating} />
-              <p className="text-[14px] text-gray-600 leading-[1.7] flex-1 mb-5">
+              <p className="text-[14px] md:text-[15px] text-gray-600 leading-[1.7] flex-1 mb-5">
                 "{review.text}"
               </p>
               <div className="pt-4 border-t border-gray-100">
-                <p className="text-[13px] font-medium text-gray-900">{review.author}</p>
-                <p className="text-[12px] text-gray-400 mt-0.5">{review.date}</p>
+                <p className="text-[16px] font-medium text-gray-900">{review.author}</p>
+                <p className="text-[13px] md:text-[14px] text-gray-400 mt-0.5">{review.date}</p>
               </div>
             </div>
           ))}
